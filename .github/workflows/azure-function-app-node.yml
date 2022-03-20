@@ -1,6 +1,11 @@
 name: Deploy Node.js project to function app
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - feature/get-products-function
+  workflow_dispatch:
 
 env:
   AZURE_FUNCTIONAPP_NAME: hexfaproducts # set this to your application's name
