@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feature/get-products-function
   workflow_dispatch:
 
 env:
